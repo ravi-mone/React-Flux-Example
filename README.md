@@ -18,3 +18,7 @@ This is a small demo to illustrate Flux implementation in React
 > npm run production
 
 <small>This will run the webpack -p</small>
+
+`4. Now open the browser with :  http://localhost:8080/`
+
+_<small>Login credentials demo/demo123</small>_
