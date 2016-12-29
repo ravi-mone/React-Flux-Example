@@ -1,16 +1,16 @@
-var Dispatcher = require('flux').Dispatcher;
+import { Dispatcher } from 'flux';
 
-// Create dispatcher instance
-var AppDispatcher = new Dispatcher();
-console.log("AppDispatcher : ", AppDispatcher)
-// Convenience method to handle dispatch requests
+class DispatcherClass extends Dispatcher {
 
-AppDispatcher.handleAction = function (action) {
-    console.log('HERE : ', action)
-    this.dispatch({
-        source: 'VIEW_ACTION',
-        action: action
-    });
+    handleAction(action) {
+        console.log('DispatcherClass : ', action)
+        this.dispatch({
+            source: 'VIEW_ACTION',
+            action: action,
+        });
+    }
 }
+
+const AppDispatcher = new DispatcherClass();
 
 export default AppDispatcher;
