@@ -51,30 +51,28 @@ class Login extends React.Component {
             <div>
 
                 <div className="form-class">
-
-                    <form className="form">
+                    <form>
                         <div style={styleObj}><i>{this.state.notifymessage}</i></div>
                         <div className="imgcontainer">
                             <img src="./img/img_avatar2.png" alt="Avatar" className="avatar"/>
                         </div>
-
-                        <div className="containers">
+                        <div className="container">
                             <label><b>{this.props.uName}</b></label>
                             <input type="text" placeholder="Enter Username" name="uname" ref="uName" required/>
 
                             <label><b>{this.props.pName}</b></label>
                             <input type="password" placeholder="Enter Password" name="psw" ref="uPass" required/>
 
-                            <button type="button" onClick={this._validateUser.bind(this)}>Login</button>
-                            <input type="checkbox"/> Remember me
-                        </div>
-
-                        <div className="containers" style={ {"backgroundColor": "#f1f1f1"}}>
-                            <button type="button" className="cancelbtn">Cancel</button>
+                            <button className="login-btn" type="button" onClick={this._validateUser.bind(this)}>Login</button><br />
+                            <div style={ {"backgroundColor": "#f1f1f1", "float":"left"}}>
                             <span className="psw">Forgot
                         <Link to="forgot">password?</Link>
                     </span>
+                            </div>
+
                         </div>
+
+
                     </form>
                 </div>
                 <Terms condition="Terms & Conditions"/>

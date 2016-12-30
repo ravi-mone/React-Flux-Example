@@ -54,7 +54,7 @@ class InputBox extends React.Component {
 							</div>
 						</div>
 						<div className="row">
-							<form >
+							<form>
 								<div className="input-group">
 									<input type="text" id="textvalue" ref="textvalue" onChange={this._handleChange} className="form-control" placeholder="Add task" />
 						      <span className="input-group-btn">

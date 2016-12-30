@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {Router, Route, Link, hashHistory, IndexRoute} from 'react-router';
 
-
 import ForgotPassword from './components/ForgotPassword';
 import ConfirmEmail from './components/Confirm';
 import UserList from './components/UserList';
@@ -25,3 +24,4 @@ const routes = (
     </Router>
 );
 ReactDOM.render(routes, document.getElementById('app'));
+

@@ -44,7 +44,6 @@ var UserStore = _.extend({}, EventEmitter.prototype, {
     this.removeListener('change', callback);
   }
 });
-
 // Register callback with AppDispatcher
 AppDispatcher.register(function (payload) {
   var action = payload.action;
@@ -52,17 +51,8 @@ AppDispatcher.register(function (payload) {
   console.log('IN STORES :', action)
   var text;
   switch (action.actionType) {
-
     case 'FETCH_USER_DATA':
         fetchUserData(action);
-      break;
-
-    case 'CART_VISIBLE':
-      //TODO
-      break;
-
-    case 'CART_REMOVE':
-        //TODO
       break;
     default:
       return true;
