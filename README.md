@@ -21,4 +21,3 @@ This is a small demo to illustrate Flux implementation in React
 
 `4. Now open the browser with :  http://localhost:8080/`
 
-_<small>Login credentials demo/demo123</small>_
